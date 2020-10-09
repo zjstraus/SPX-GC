@@ -1,0 +1,11 @@
+{
+  "general": {
+    "port": "5000",
+    "dataroot": "/data/dataroot",
+    "templatefolder": "/data/template",
+    "logfolder": "/data/log"
+  },
+  "casparcg": {
+    "servers": []
+  }
+}

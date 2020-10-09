@@ -128,7 +128,14 @@ Stop all running instances
 pm2 kill
 ```
 
-
+## Option 2.5: **Build and run in docker**
+After pulling the source locally, build the included dockerfile and run the resulting image:
+```
+docker build -t spxgc .
+docker run --name spxgc -v spxgcdata:/data -p 5000 -d spxgc
+```
+This image builds with a default config file that moves all the templates/assets/etc to `/data`, so mount that to persist data. Currently SPX-GC itself
+does not handle changing some config options in this environment very gracefully, which will need improvement.
 
 
 ---
